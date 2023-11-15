@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor Classes</title>
+    <Script>
+        //funcao
+        function exibirTexto() {
+            var campo = document.getElementsByClassName("texto")[2];
+
+            //exibir
+            alert(campo.innerHTML);
+        }
+
+    </Script>
+</head>
+<body>
+
+    <button onclick="exibirTexto()">Clique aqui</button>
+    <h1 class="texto">Titulo em H1</h1>
+    <h2 class="texto">Titulo em h2</h2>
+    <p class="texto">paragrafo</p>
+</body>
+</html>
