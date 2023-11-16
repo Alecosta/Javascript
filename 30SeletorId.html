@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Funcao
+        function exibirConteudo() {
+            //obter dados
+            var campo = document.getElementById("campo");
+
+            //exibir
+            alert(campo.value);
+
+            //apagaro conteudo
+            campo.value = "xxx";
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="campo">
+    <button onclick="exibirConteudo()">clique Aqui</button>
+</body>
+</html>
