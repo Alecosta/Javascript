@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Base - JQuery</title>
+
+    <!--JQuery-->
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <!--Javascript-->
+    <script>
+        $(document).ready(function(){
+
+            //Ocultar H1
+            $("h1").css("display","none");
+
+            $("#exibir").click(function(){
+                $("h1").fadeIn(3000);
+            })
+
+            $("#ocultar").click(function(){
+                $("h1").fadeOut(3000);
+            })
+
+                /*
+                temppo
+                1 Default 0,4s
+                2 Slow 0,6s
+                3 Valor em milisegundos 3000 = 3segundos 
+                */
+
+        });
+    </script>
+</head>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <hr>
+
+    <h1>Jquery</h1>
+</body>
+</html>
